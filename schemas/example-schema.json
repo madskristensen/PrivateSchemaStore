@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "required": [ "id" ],
+
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the example"
+    },
+    "id": {
+      "type": "number",
+      "description": "The unique identifier of the sample"
+    }
+  }
+}

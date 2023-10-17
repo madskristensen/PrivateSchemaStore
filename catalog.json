@@ -4,8 +4,8 @@
     {
       "name": "Your schema example name",
       "description": "",
-      "fileMatch": ["*.yourschema.json"],
-      "url": "https://microsoftschemas.azurewebsites.net/schemas/yourschema.json"
+      "fileMatch": ["*.example.json"],
+      "url": "https://example.com/schemas/example-schema.json"
     }
   ]
 }
