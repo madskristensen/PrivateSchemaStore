@@ -20,6 +20,17 @@
             padding: 10px;
             max-width: 900px;
             margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        figure{
+            margin: 0;
+        }
+
+        figcaption{
+           font-style: italic;
+           padding-top: 5px;
+           font-size: .8em;
         }
 
         footer {
@@ -36,16 +47,36 @@
 <body>
     <header>
         <h1>Microsoft Schema Store</h1>
-        <p>A collection of Microsoft internal JSON schema files</p>
+        <p>A collection of JSON schema files</p>
     </header>
 
     <main>
         <section>
             <h2>Consume the JSON schemas</h2>
+            <p>In Visual Studio, add the URL <a href="catalog.json">https://microsoftschemas.azurewebsites.net/catalog.json</a>
+            in <strong>Tools -> Options </strong>as shown below.</p>
+
+            <figure>
+                <img src="assets/vs-screenshot.png" width="791" height="537" />
+                <figcaption>Tools -> Options dialog in Visual Studio</figcaption>
+            </figure>
+
+            <p>For VS Code, see the <a href="https://code.visualstudio.com/Docs/languages/json#_json-schemas-and-settings">JSON Schema and settings</a> documentation.</p>
         </section>
 
         <section>
             <h2>Add your JSON schema</h2>
+
+            <p>
+                Send a pull request to <a href="https://github.com/madskristensen/PrivateSchemaStore">this GitHub repository</a> and include:            
+            </p>
+
+            <ol>
+                <li>A schema .json (draft v7) file in the <em>schemas</em> folder.</li>
+                <li>An entry in the <em>catalog.json</em> file.</li>
+            </ol>
+
+            <p>Once the pull request has been accepted, an automatic publish to this website happens.</p>
         </section>
     </main>
 
