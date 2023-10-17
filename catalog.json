@@ -2,10 +2,10 @@
   "$schema": "https://json.schemastore.org/schema-catalog.json",
   "schemas": [
     {
-      "name": "Common types for all schemas",
+      "name": "Your schema example name",
       "description": "",
-      "fileMatch": [],
-      "url": "https://json.schemastore.org/base.json"
+      "fileMatch": ["*.yourschema.json"],
+      "url": "https://microsoftschemas.azurewebsites.net/schemas/yourschema.json"
     }
   ]
 }
